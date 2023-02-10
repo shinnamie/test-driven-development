@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 public class MoneyTest {
 
 	@Test
-	public void Dollarのテスト() {
-		Dollar five = new Dollar(5);
+	public void Dollar掛け算のテスト() {
+		Money five = Money.dollar(5);
 		assertEquals(new Dollar(10),five.times(2));
 		assertEquals(new Dollar(15),five.times(3));
 	}
@@ -25,7 +25,7 @@ public class MoneyTest {
 	}
 	
 	@Test
-	public void Francのテスト() {
+	public void Franc掛け算のテスト() {
 		Franc five = new Franc(5);
 		assertEquals(new Franc(10),five.times(2));
 		assertEquals(new Franc(15),five.times(3));
