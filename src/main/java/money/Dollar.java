@@ -1,21 +1,16 @@
 package money;
 
+public class Dollar extends Money {
 
-public class Dollar extends Money{
-	
 	public Dollar(int amount) {
 		this.amount = amount;
+		currency = "USD";
 	}
 
 	public Money times(int multiplier) {
 		return new Dollar(amount * multiplier);
 	}
-	
-	public String currency() {
-		return "USD";
-	}
-	
-	
+
 	public int getAmount() {
 		return amount;
 	}
@@ -23,6 +18,5 @@ public class Dollar extends Money{
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
-	
-	
+
 }

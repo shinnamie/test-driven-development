@@ -3,8 +3,13 @@ package money;
 abstract class Money {
 	
 	protected int amount;
+	protected String currency;
 	abstract Money times(int multiplier);
-	abstract String currency();
+	
+	String currency() {
+		return currency;
+	}
+	
 	
 	public boolean equals(Object object) {
 		Money money = (Money) object;
@@ -17,8 +22,10 @@ abstract class Money {
 	}
 	
 	static Money franc(int amount) {
-		return new Dollar(amount);
+		return new Franc(amount,null);
 	}
+	
+	
 
 	public int getAmount() {
 		return amount;
