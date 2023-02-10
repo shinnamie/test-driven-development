@@ -1,4 +1,4 @@
-package com.example.demo;
+package money;
 
 
 public class Dollar {
