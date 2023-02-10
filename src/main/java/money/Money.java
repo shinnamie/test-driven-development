@@ -4,6 +4,7 @@ abstract class Money {
 	
 	protected int amount;
 	protected String currency;
+	
 	abstract Money times(int multiplier);
 	
 	String currency() {
@@ -18,7 +19,7 @@ abstract class Money {
 	}
 	
 	static Money dollar(int amount) {
-		return new Dollar(amount);
+		return new Dollar(amount,"USD");
 	}
 	
 	static Money franc(int amount) {
