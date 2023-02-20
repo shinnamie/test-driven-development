@@ -69,4 +69,9 @@ public class MoneyTest {
 		assertEquals(Money.dollar(1), result);
 	}
 	
+	@Test
+	public void リストの等価性テスト() {
+		assertTrue((new Object[] {"abc"}).equals(new Object[] {"abc"}));
+	}
+	
 }
